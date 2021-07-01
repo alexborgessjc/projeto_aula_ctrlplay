@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Proteja a Terra</title>
+
+		<script src="jogo.js"></script>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="estilo.css">
+		
+
+	</head>
+	<body background-color=black onload="iniciaJogo()">
+		<div class="Topo">
+			<table>
+				<tr>
+					<td>
+						<audio id="musica" controls autoplay>
+							<source src="musicas/musica.mp3" type="audio/mpeg">
+						</audio>
+					</td>
+					<td>
+						<h1>Salve a Terra!</h1>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="painelEsquerdo">
+			<table align="center">
+				<tr>
+					<td>
+						<img src="imagens/meteoro.png" width="50px"/>
+					</td>
+					<td>
+						<span id="meteoros"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imagens/explosao.png" width="50px" />
+					</td>
+					<td>
+						<span id="explosoes"></span>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<tr>
+					<td id="imagemCronometro" >
+						<span id="cronometro"></span>
+					</td>
+				</tr>
+			</table>
+			<br><br>
+			<table align=center>
+				<tr>
+					<td><button class="btn btn-danger" onclick="start()">Start</button>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div id="cenario" class="terra"></div>
+		
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+		
+	</body>
+	
+</html>

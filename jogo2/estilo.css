@@ -1,0 +1,19 @@
+h1{
+	color: Indigo;
+	font-size: 4em;
+	font-family: Arial Black;
+}
+
+.jogada{
+	width:100px; 
+	height:100px;
+}
+
+.linhaDeBaixo{
+	border-bottom: solid 1px red;
+}
+
+.linhaDireita{
+	border-right:solid 1px red;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		
+		<script src="jogo.js"></script>
+		
+		<link href="estilo.css" rel="stylesheet">
+		 
+	</head>
+	<body>
+		<div id="pagina_inicial" align="center">
+			<table>
+				<tr>
+					<td colspan="3" align="center"><h1>JOGO DA VELHA</h1></td>
+				</tr>
+				<tr>
+					<td align="center" width=25%>
+						<img src="imagens/jogador1.png" width="50%">
+						<img src="imagens/imagemX.png" width="20%">
+						<br>
+						<input id="entrada_apelido_jogador_1" type="text" maxlength="10" placeholder="Apelido jogador 1" 
+						style="border: 0px;">
+					</td>
+					<td align="center" width=50%>
+						<img id="btn_iniciar_jogo" src="imagens/iniciar.png" width="70%">
+					</td>
+					<td align="center" width=25%>
+						<img src="imagens/imagemO.png" width="20%">
+						<img src="imagens/jogador2.png" width="60%">
+						<br>
+						<input id="entrada_apelido_jogador_2" type="text" maxlength="10" placeholder="Apelido jogador 2" 
+						style="border: 0px;">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="tabuleiro" style="display:none; margin-top:50px; text-align:center;">
+			<table>
+				<tr>
+					<td>
+						<img src="imagens/jogador1.png" width="30%"><img src="imagens/imagemX.png" width="10%">
+						<br>
+						<span id="nome_jogador_1"></span>
+					</td>
+			<td>
+				<table>
+					<tr>
+						<td class="linhaDeBaixo linhaDireita">
+							<div class="jogada" id="a-1"></div></td>
+						<td class="linhaDeBaixo linhaDireita">
+							<div class="jogada" id="a-2"></div></td>
+						<td class="linhaDeBaixo">
+							<div class="jogada" id="a-3"></div></td>
+					</tr>
+					<tr>
+						<td class="linhaDeBaixo linhaDireita">
+							<div class="jogada" id="b-1"></div></td>
+						<td class="linhaDeBaixo linhaDireita">
+							<div class="jogada" id="b-2"></div></td>
+						<td class="linhaDeBaixo">
+							<div class="jogada" id="b-3"></div></td>
+					</tr>
+					<tr>
+						<td class="linhaDireita">
+							<div class="jogada" id="c-1"></div></td>
+						<td class="linhaDireita">
+							<div class="jogada" id="c-2"></div></td>
+						<td>
+							<div class="jogada" id="c-3"></div></td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<img src="imagens/imagemO.png" width="10%"><img src="imagens/jogador2.png" width="40%">
+				<br>
+				<span id="nome_jogador_2"></span>
+			</td>
+				</tr>
+			</table>
+			<button class="btn btn-danger" onclick="start()">Jogar Novamente</button>		
+		</div>			
+	</body>
+</html>
